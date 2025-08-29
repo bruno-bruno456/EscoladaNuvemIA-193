@@ -1,9 +1,9 @@
 """
 Crie uma função que calcule a idade de uma pessoa em dias, baseada no ano de nascimento.
 """
-import datetime
+from datetime import datetime
 def calcular_idade_dias(ano_nascimento):
-    ano_atual = datetime.datetime.now().year
+    ano_atual = datetime.now().year
     idade_anos = ano_atual - ano_nascimento
     idade_dias = idade_anos * 365
     return idade_dias
